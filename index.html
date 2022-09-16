@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="mini_icone.png"/>
+    <title>Mariana Chagas</title>
+</head>
+<body>
+
+    <header class="navbar">
+        <ul>
+            <li><a href="#sobre_mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+    </header>
+    <div class="topo">
+        <h1>Mariana Chagas</h1>
+        <h2>Desenvolvedora Web</h2>
+    </div>
+    <section id="sobre_mim">
+        <div class="divisao">
+            <div class="linha"></div>
+            <h3>Sobre mim</h3>
+            <div class="linha"></div>
+        </div>
+        <div class="conteudo">
+            <img src="autoretrato.png" alt="autoretrato">
+            <p>Olá! Eu sou a <span class="text-rosa">Mariana</span>, graduanda em <span class="text-rosa">Sistema de Informação</span> pela PUC-Minas. Apaixonada por <span class="text-rosa">programação, jogos e design</span> quero aprimorar cada vez mais essas habilidades e elevá-las ao infinito e além! Para isso, tenho desenvolvido alguns projetos pessoais, que você pode checar descendo mais a tela. Nessa minha jornada, espero poder ajudar outras pessoas a realizarem seus sonhos, quem sabe uma delas não pode ser você?</p>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="divisao">
+            <div class="linha"></div>
+            <h3>Habilidades</h3>
+            <div class="linha"></div>
+        </div>
+        <p>Essas são algumas <span class="text-azul">ferramentas</span>, das quais sou mais familiarizada. Continuo estudando para que essa lista seja cada vez mais extensa!</p>
+        <div class="conteudo">
+            <table>
+                <tr>
+                    <td><img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="html" onclick="textHablidades('html')" /></td>
+                    <td><img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="css" onclick="textHablidades('css')" /></td>
+                    <td><img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="javascript" onclick="textHablidades('js')" /></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="bootstrap" onclick="textHablidades('bootstrap')" /></td>
+                    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" onclick="textHablidades('sass')" /></td>
+                    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" onclick="textHablidades('figma')" /></td>
+                </tr>
+                <tr>
+                    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" alt="photoshop" onclick="textHablidades('photoshop')" /></td>
+                    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" alt="illustrator" onclick="textHablidades('illustrator')" /></td>
+                </tr>
+            </table>
+            <div class="descricao">
+                <p id="texto_descricao">Clique em alguma das habilidades para saber mais sobre ela.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projetos">
+        <div class="divisao">
+            <div class="linha"></div>
+            <h3>Projetos</h3>
+            <div class="linha"></div>
+        </div>
+        <p>As coisas estão meio vazias por aqui, não é mesmo? Mas isso é apenas questão de tempo! Já estou trabalhando para que <span class="text-verde">em breve</span> isso aqui fique bem mais movimentado. Todos temos que começar com algo, não é mesmo?</p>
+        <div class="caixas_projeto">
+            <div class="em_breve">Em Breve</div>
+            <div class="em_breve">Em Breve</div>
+            <div class="em_breve">Em Breve</div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="divisao">
+            <div class="linha"></div>
+            <h3>Contatos</h3>
+            <div class="linha"></div>
+        </div>
+        <div class="redes">
+            <div class="caixa_redes">
+                <a href="https://github.com/MariiGonzalez" target="_blank" rel="noopener noreferrer" class="nome_redes">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github"/>
+                    <h4>github</h4>
+                </a>
+                <p>Aqui você vai achar o código de alguns projetos que eu ando trabalhando.</p>
+            </div>
+            <div class="caixa_redes">
+                <a href="Currículo Mariana Chagas.docx" download  class="nome_redes">
+                    <img src="Icons/download_icon.png" alt="curriculo"/>
+                    <h4>curriculo pdf</h4>
+                </a>
+                <p>Quer dar uma olhada mais detalhadas nas minhas informações? Clique no ícone para baixar meu currículo.</p>
+            </div>
+            <div class="caixa_redes">
+                <a href="https://www.linkedin.com/in/mariana-gonzalez-das-chagas-b9a588208?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bj616a9FTSoSWBYMC2ll25A%3D%3D" target="_blank" rel="noopener noreferrer" class="nome_redes">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="linkedin"/>
+                    <h4>linkedin</h4>
+                </a>
+                <p>O meu perfil é o lugar perfeito para acompanhar minhas conquistas, além de poder me adicionar na sua rede de contatos.</p>
+            </div>
+            <div class="caixa_redes">
+                <div class="nome_redes">
+                    <img src="Icons/email_icon.png" alt="email"/>
+                    <h4>marigchagas@terra.com.br</h4>
+                </div>
+                <p>Gostaria de entrar em contato diretamente comigo? Fique a vontade para me mandar um e-mail.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Design, programação e ilustração feitos por Mariana Gonzalez das Chagas.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

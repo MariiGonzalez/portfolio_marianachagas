@@ -1,0 +1,2 @@
+<h2>Portfólio Mariana Chagas</h2>
+<p>Olá, esse é o repositório do meu portifólio!</br>Aqui você pode encontrar todos os arquivos utilizados para a sua criação. As linguagens utilizadas nesse projeto foram HTML, CSS e JavaScript. Além do figma para a elaboração do design da página.</p>

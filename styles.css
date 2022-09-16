@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    display: inline;
+    padding: 30px 25px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover {
+    font-weight: 400;
+}
+
+/* Sessão com nome */
+
+.topo {
+    margin: 100px 0px;
+    padding: 100px 0;
+    display: block;
+    border-bottom: 20px #F6B69F solid;
+    border-top: 20px #F6B69F solid;
+    text-align: center;
+    width: 100%;
+}
+
+.topo h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+}
+
+.topo h2 {
+    font-size: 30px;
+    color: #F6B69F;
+}
+
+/* Divisão entre sessões */
+
+.divisao {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divisao .linha {
+    height: 4px;
+    width: 30%;
+    background-color: black;
+}
+
+.divisao h3 {
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Estilo geral das sessões */
+
+section p{
+    text-align: center;
+    padding: 30px 100px;
+    font-size: 20px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.text-rosa {
+    color: #F6B69F;
+}
+
+.text-azul {
+    color: #6F7B92;
+}
+
+.text-verde {
+    color: #6FB270;
+}
+
+/* Sobre mim */
+
+#sobre_mim .conteudo img {
+    width: 500px;
+    height: 500px;
+}
+
+#sobre_mim .conteudo p {
+    text-align: center;
+    font-size: 20px;
+    padding: 100px;
+}
+
+/* Habilidades */
+
+#habilidades table {
+    margin: 0 80px;
+    width: 400px;
+}
+
+#habilidades img{
+    width: 100px;
+    padding: 10px;
+    border: 3px black solid;
+    margin: 5px;
+}
+
+#habilidades img:hover{
+    border: 3px #6F7B92 solid;
+    cursor: pointer;
+    /* background-color: #6F7B92; */
+    
+}
+
+#habilidades .descricao {
+    border: 4px #6F7B92 solid;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+
+#habilidades .descricao p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}
+
+/* Projetos */
+
+#projetos .caixas_projeto {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#projetos .caixas_projeto .em_breve {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px 40px;
+    margin: 20px 40px 40px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+}
+
+#projetos .caixas_projeto .em_breve:hover {
+    background-color: #6FB270;
+    border: 2px solid #6FB270;
+    cursor: pointer;
+}
+
+/* Contatos */
+
+#contato .redes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 50px;
+    
+}
+
+#contato .redes .caixa_redes {
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;  
+}
+
+#contato .redes .caixa_redes .nome_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#contato a {
+    text-decoration: none;
+}
+
+#contato .redes .caixa_redes .nome_redes h4 {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 20px;
+
+}
+
+#contato .redes .caixa_redes .nome_redes img {
+    width: 65px;
+}
+
+#contato .redes .caixa_redes p {
+    padding: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F6B69F;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+    font-size: 18px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1150px) {
+
+
+    #sobre_mim .conteudo p {
+        padding: 50px;
+    }
+    
+    #contato .redes .caixa_redes .nome_redes h4 {
+        font-size: 18px;
+        padding: 10px 5px 0;
+    }
+}
+
+@media (max-width:1050px) {
+
+    #contato .redes .caixa_redes p {
+        font-size: 15px;
+        padding: 18px;
+    }
+
+    .conteudo, #contato .redes .caixa_redes .nome_redes {
+        display: block;
+        text-align: center;
+    }
+
+    #habilidades .conteudo table, #habilidades .conteudo .descricao {
+        margin: 0 auto 40px;
+    }
+
+}
+
+@media (max-width:830px) {
+    
+    .navbar {
+        display: none;
+    }
+
+    .topo {
+        padding: 50px 0;
+        margin: 50px 0;
+    }
+
+}
+
+@media (max-width:790px) {
+
+    #projetos .caixas_projeto {
+        display: block;
+        width: 250px;
+        margin: 20px auto;
+    }
+    
+    #contato .redes {
+        grid-template-columns: 100%;
+    }
+
+    #contato .redes .caixa_redes {
+        margin: 20px 10%;
+    }
+}
+
+@media (max-width:570px) {
+
+    .topo h1{
+        font-size: 80px;
+    }
+    
+    .topo h2 {
+        font-size: 20px;
+    }
+
+    .divisao h3 {
+        font-size: 40px;
+    }
+
+    #sobre_mim .conteudo img {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre_mim .conteudo p {
+        padding: 40px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    section p, #sobre_mim .conteudo p{
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+    
+    .divisao h3 {
+        font-size: 30px;
+    }
+
+    #habilidades table {
+        width: 100%;
+        margin: 0;
+    }
+
+    #habilidades img {
+        width: 70%;
+    }
+
+    #habilidades .descricao {
+        margin: 0;
+    }
+
+    #habilidades .conteudo .descricao p {
+        padding: 0;
+    }
+
+    #contato .redes .caixa_redes .nome_redes h4 {
+        font-size: 10px;
+        padding: 0;
+    }
+}
